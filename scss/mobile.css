@@ -1,0 +1,43 @@
+#mainheader .navbar ul {
+  float: none;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-size: small;
+}
+#mainheader .navbar ul li {
+  margin: 1rem 0;
+  margin-left: 2rem;
+}
+#mainheader .navbar ul li a {
+  color: #fff;
+}
+#mainheader #showcase .showcase-content {
+  text-align: center;
+  margin-top: 2rem;
+}
+#mainheader #showcase .showcase-content h3 {
+  margin: 0;
+}
+
+#bookPrev .prev-row {
+  display: block;
+}
+
+#author .author-row {
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+#author .author-row .author-img img {
+  width: 75%;
+}
+
+#download .download-row {
+  display: block;
+}
+#download .download-row .book-img {
+  text-align: center;
+}/*# sourceMappingURL=mobile.css.map */

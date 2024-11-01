@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1300px;
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+.btn-cir {
+  text-align: center;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 50px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.btn-rec {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: violet;
+}
+
+#mainheader {
+  background: url(/images/showcase.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+#mainheader .navbar {
+  width: 90%;
+}
+#mainheader .navbar ul {
+  margin: 2rem 0;
+  float: right;
+}
+#mainheader .navbar ul li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+#mainheader #showcase .showcase-content {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 15rem;
+}
+#mainheader #showcase .showcase-content h3 {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+#mainheader #showcase .showcase-content h1 {
+  font-size: 4.5rem;
+  font-family: "Sigmar One", sans-serif;
+  margin-bottom: 1rem;
+}
+
+#bookPrev {
+  background: rgb(202, 202, 202);
+}
+#bookPrev h2 {
+  text-align: center;
+}
+#bookPrev .prev-row {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  gap: 100px;
+}
+#bookPrev .prev-row h3 {
+  font-weight: 400;
+}
+#bookPrev .prev-row .box {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+#bookPrev .prev-row img {
+  width: 300px;
+  background: rgb(242, 128, 237);
+  padding: 50px;
+  margin-bottom: 2rem;
+}
+#bookPrev .prev-row :nth-child(1) img:hover {
+  transform: rotate(10deg);
+}
+#bookPrev .prev-row :nth-child(2) img:hover {
+  transform: rotate(-10deg);
+}
+#bookPrev .prev-row :nth-child(3) img:hover {
+  animation-name: buzz-out-on-hover;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes buzz-out-on-hover {
+  10% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.buzz-out-on-hover:hover, .buzz-out-on-hover:focus, .buzz-out-on-hover:active {
+  animation-name: buzz-out-on-hover;
+  animation-duration: 0.75s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+#author {
+  margin-top: 4rem;
+  width: 80%;
+  margin: 0 auto;
+}
+#author .author-row {
+  display: flex;
+  margin-top: 5rem;
+  gap: 100px;
+}
+#author .author-row img {
+  width: 450px;
+}
+#author .author-row h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+#author .author-row h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+#author .author-row p {
+  line-height: 25px;
+}
+
+#download {
+  background: rgb(203, 20, 203);
+}
+#download .download-row {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 100px;
+}
+#download .download-row img {
+  margin: 5rem 0;
+  width: 350px;
+}
+#download .download-row .downbook {
+  margin-top: 4rem;
+  text-align: left;
+}
+#download .download-row .downbook h2 {
+  font-weight: 400;
+}
+#download .download-row .downbook p {
+  margin-bottom: 3rem;
+  line-height: 30px;
+}
+
+#footer {
+  padding: 3rem 0;
+  text-align: center;
+  background: #000;
+}/*# sourceMappingURL=styles.css.map */
