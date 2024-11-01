@@ -196,6 +196,26 @@ h2 {
   line-height: 25px;
 }
 
+.flex {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+#result {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+#result img {
+  margin-top: 5rem;
+  width: 50%;
+  border-radius: 50%;
+}
+#result h4 {
+  margin-bottom: 5rem;
+}
+
 #download {
   background: rgb(203, 20, 203);
 }
