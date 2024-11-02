@@ -35,6 +35,14 @@
   width: 75%;
 }
 
+#result {
+  display: block;
+  margin: 0 auto;
+}
+#result img {
+  margin-bottom: 1rem;
+}
+
 #download .download-row {
   display: block;
 }
